@@ -1,0 +1,165 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Aternity",
+    "dateExported": "2023-02-28T23:48:10.731Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "3b60c583-9f20-4259-b33c-deee8e8959f7",
+            "colId": "ea49ab32-3faa-4970-8b6e-17331519e4c1",
+            "containerId": "",
+            "name": "Aternity_Basic_DashBoardAudit",
+            "url": "https://us3-odata.aternity.com/aternity.odata/latest/DASHBOARD_VIEWS_AUDIT",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2022-09-28T17:53:03.427Z",
+            "modified": "2022-10-03T19:09:01.902Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "nick.hurst@riverbed.com",
+                    "password": "02680fd0_392d_4473_b5cf_e59071d4d5c9"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "f6bbe37b-a5d7-462b-ad96-1aaff4269c8c",
+            "colId": "ea49ab32-3faa-4970-8b6e-17331519e4c1",
+            "containerId": "",
+            "name": "Aternity_DashBoardAudit_Filter_AccountName",
+            "url": "https://us3-odata.aternity.com/aternity.odata/latest/DASHBOARD_VIEWS_AUDIT?$filter=endswith(account_name,'Loomis')",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2022-09-28T18:08:07.809Z",
+            "modified": "2022-10-04T22:58:39.985Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "$filter",
+                    "value": "endswith(account_name,'Loomis')",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "nick.hurst@riverbed.com",
+                    "password": "02680fd0_392d_4473_b5cf_e59071d4d5c9"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "4b9e5f5a-1740-4b37-bced-6be2de411356",
+            "colId": "ea49ab32-3faa-4970-8b6e-17331519e4c1",
+            "containerId": "",
+            "name": "Aternity_DashBoardAudit_Filter_TimePeriod_AND_AccountName",
+            "url": "https://us3-odata.aternity.com/aternity.odata/latest/DASHBOARD_VIEWS_AUDIT?$filter=relative_time(last_180_days) and endswith(account_name,'Waste Management')",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2022-09-28T18:23:16.525Z",
+            "modified": "2022-10-04T23:00:35.207Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "$filter",
+                    "value": "relative_time(last_180_days) and endswith(account_name,'Waste Management')",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "nick.hurst@riverbed.com",
+                    "password": "02680fd0_392d_4473_b5cf_e59071d4d5c9"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "a7f92bc0-5cbc-412d-8e62-694386bae847",
+            "colId": "ea49ab32-3faa-4970-8b6e-17331519e4c1",
+            "containerId": "",
+            "name": "Aternity_Audit Changes",
+            "url": "https://us3-odata.aternity.com/aternity.odata/latest/CHANGE_AUDIT_LOG?$filter=relative_time(last_40_days)",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2022-10-05T12:15:04.213Z",
+            "modified": "2022-10-05T12:33:54.849Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "$filter",
+                    "value": "relative_time(last_40_days)",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "nick.hurst@riverbed.com",
+                    "password": "02680fd0_392d_4473_b5cf_e59071d4d5c9"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "c56b68bc-84ab-46b8-9a31-da55258c1817",
+            "colId": "ea49ab32-3faa-4970-8b6e-17331519e4c1",
+            "containerId": "",
+            "name": "Aternity_User Account details",
+            "url": "https://us3-odata.aternity.com/aternity.odata/latest/ACCOUNT_USER_DETAILS?$filter=(USER_NAME eq 'Ali.Dawood@us.loomis.com')",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2022-10-05T16:29:50.061Z",
+            "modified": "2023-02-21T15:34:08.192Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "$filter",
+                    "value": "(USER_NAME eq 'Ali.Dawood@us.loomis.com')",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "nick.hurst@riverbed.com",
+                    "password": "25af5111_4042_407e_bf0d_6a60c67b6026"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "2f1e01b8-0f02-4a77-b17e-baafe0b88030",
+            "colId": "ea49ab32-3faa-4970-8b6e-17331519e4c1",
+            "containerId": "",
+            "name": "Aternity_CHANGE_AUDIT_LOG",
+            "url": "https://us3-odata.aternity.com/aternity.odata/latest/CHANGE_AUDIT_LOG?$filter=relative_time(last_30_days) ",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2022-10-05T19:45:53.345Z",
+            "modified": "2022-10-05T19:47:45.901Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "$filter",
+                    "value": "relative_time(last_30_days)",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "nick.hurst@riverbed.com",
+                    "password": "02680fd0_392d_4473_b5cf_e59071d4d5c9"
+                }
+            },
+            "tests": []
+        }
+    ]
+}
